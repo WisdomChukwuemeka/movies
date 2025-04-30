@@ -5,14 +5,13 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 export const App = () => {
   return (
-    <>
+    <><Layout />
       <div>
-        <Layout />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
-        </Routes>
+          <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
       </div>
     </>
   );

@@ -74,3 +74,7 @@
     background-color: #0056b3; /* Active page button color */
     font-weight: bold; /* Highlight active page */
   }
+  .Link{
+    text-decoration: none;
+    color: white;
+  }

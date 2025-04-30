@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css"
-
+import { Link } from "react-router-dom";
 export const Layout = () => {
     const [loader, setLoader] = useState(true)
     const [menu, setMenu] = useState(true)
@@ -13,7 +13,9 @@ export const Layout = () => {
                 <div className="header">
                     <header>
                         <nav>
+                            <Link to="/home" className="Link">
                             <h3>Lutarn</h3>
+                            </Link>
                             <div className="searchinput">
                                 <input type="search" name="" id="" placeholder="Search movies"/>
                                 <button type="">Search</button>
