@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100dvh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../src/images/cod.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+header{
+    position: relative;
+    background-color: rgb(78, 3, 3);
+    color: white;
+    height: fit-content;
+    padding: 0 0 1rem 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 0 2rem;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.bi-list, bi-x-lg{
+    font-size: 2rem; 
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.searchinput{
+    display: flex;
+    height: clamp(2dvh, 2vh, 3vh);
+}
+.searchinput input{
+    width: clamp(20vw, 2vw + 0.5rem, 30vw);
+    height: fit-content;
+}
+.searchinput button{
+    width: 6vw;
+    height: fit-content;
+}
+.menu{
+    display: none;
+}
+
+
+
+/* Home styling in css */
+.home-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+.img{
+overflow: hidden;
+  width: 100vw;
+  height: fit-content;
+  background-color: red;
+
+img{
+    width: 100vw;
+}
+}
+.home-title{
+    position: absolute;
+    text-align: center;
+    font-size: clamp(0.6rem, 1vw + .5rem, 4rem);
+}
+.home-sub-title{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.started{
+    display: flex;
+    justify-content: center;
+    
+    div{
+    padding: 0.5rem 0.75rem;
+    background-color: rgb(112, 23, 7);
+    cursor: pointer;
+    border-radius: 10px;
+    width: fit-content;
+    }
+}
+}
+.second-home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0 0 0;
+    gap: 1.5rem;
+    h3{
+        font-size: clamp(0.7rem, 2vw + .5rem, 1rem);
+    }
+    h2{
+        font-size: clamp(1.5rem, 2vw + .5rem, 2rem);
+    }
+}
+
+.grid-home-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), auto));
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    }
+
+.home-image{
+    width: auto;
+    height: clamp(12rem, 10vw + .5rem, 20rem);
+    aspect-ratio: 1/1;
+
+}
+
+
+.questionone, .questiontwo, .questionthree, .questionfour{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: clamp(20rem, 2vw + .5rem, 30rem);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    margin-top: 1rem;
+}
+.third-container{
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+    margin: 3rem 0 0 0;
+    background: linear-gradient(to right, rgba(63, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    padding: 2rem 0 2rem 0;
+}
+.third-section p{
+    width: 60vw;
+    font-size: clamp(0.5rem, 2vw + .5rem, 1rem);
+    margin: 0 auto;
+    line-height: 5dvh;
+    width: clamp(20rem, 2vw + .5rem, 30rem);
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+
